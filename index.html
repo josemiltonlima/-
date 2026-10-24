@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Para o Amor da Minha Vida ❤️</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+:root{
+    --pink:#ff4d8d;
+    --purple:#8f56ff;
+    --bg:#050505;
+    --glass:rgba(255,255,255,.08);
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#050505;
+    color:white;
+    font-family:'Poppins',sans-serif;
+    overflow-x:hidden;
+}
+
+/* Fundo animado */
+
+.stars{
+    position:fixed;
+    inset:0;
+    background-image:
+    radial-gradient(white 1px, transparent 1px);
+    background-size:50px 50px;
+    opacity:.12;
+    z-index:-2;
+    animation:moveStars 120s linear infinite;
+}
+
+@keyframes moveStars{
+    from{transform:translateY(0);}
+    to{transform:translateY(1500px);}
+}
+
+/* Hero */
+
+.hero{
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:20px;
+    position:relative;
+}
+
+.glow{
+    position:absolute;
+    width:500px;
+    height:500px;
+    border-radius:50%;
+    background:radial-gradient(
+        var(--pink),
+        transparent 70%);
+    filter:blur(120px);
+    opacity:.25;
+}
+
+.hero h1{
+    font-size:clamp(3rem,8vw,7rem);
+    line-height:1;
+    margin-bottom:20px;
+    text-shadow:0 0 30px rgba(255,77,141,.8);
+}
+
+.hero p{
+    max-width:700px;
+    font-size:1.2rem;
+    opacity:.9;
+}
+
+.btn{
+    margin-top:40px;
+    padding:16px 35px;
+    border:none;
+    border-radius:100px;
+    background:linear-gradient(
+      45deg,
+      var(--pink),
+      var(--purple)
+    );
+    color:white;
+    cursor:pointer;
+    font-size:1rem;
+    font-weight:600;
+    box-shadow:0 0 30px rgba(255,77,141,.4);
+    transition:.4s;
+}
+
+.btn:hover{
+    transform:translateY(-5px);
+}
+
+/* Seções */
+
+section{
+    max-width:1100px;
+    margin:auto;
+    padding:100px 25px;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:50px;
+    font-size:2.5rem;
+}
+
+.card{
+    background:var(--glass);
+    backdrop-filter:blur(15px);
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:25px;
+    padding:35px;
+}
+
+.card p{
+    line-height:1.9;
+}
+
+/* Contador */
+
+.counter{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+    gap:20px;
+}
+
+.counter-box{
+    background:var(--glass);
+    border-radius:20px;
+    padding:25px;
+    text-align:center;
+}
+
+.counter-box h3{
+    font-size:2rem;
+    color:#ff8fb9;
+}
+
+/* Galeria */
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.photo{
+    height:350px;
+    border-radius:25px;
+    overflow:hidden;
+    position:relative;
+}
+
+.photo img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    transition:.6s;
+}
+
+.photo:hover img{
+    transform:scale(1.1);
+}
+
+/* Carta */
+
+.letter{
+    font-size:1.15rem;
+    line-height:2;
+    text-align:center;
+}
+
+/* Motivos */
+
+.reasons{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.reason{
+    background:var(--glass);
+    padding:20px;
+    border-radius:20px;
+}
+
+/* Rodapé */
+
+footer{
+    text-align:center;
+    padding:50px 20px;
+    opacity:.8;
+}
+
+/* Corações */
+
+.heart{
+    position:fixed;
+    top:-20px;
+    color:#ff4d8d;
+    pointer-events:none;
+    animation:fall linear forwards;
+}
+
+@keyframes fall{
+    to{
+        transform:translateY(110vh);
+        opacity:0;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="stars"></div>
+
+<section class="hero">
+
+    <div class="glow"></div>
+
+    <h1>❤️ Meu Amor ❤️</h1>
+
+    <p>
+        Em meio a bilhões de pessoas no mundo,
+        meu coração encontrou exatamente você.
+    </p>
+
+    <button class="btn" onclick="document.getElementById('historia').scrollIntoView()">
+        Nossa História
+    </button>
+
+</section>
+
+<section id="historia">
+
+    <h2 class="section-title">✨ Nossa História</h2>
+
+    <div class="card">
+        <p>
+            Desde o momento em que você entrou na minha vida,
+            tudo ganhou mais cor, mais significado e mais felicidade.
+
+            Os dias passaram a ser mais leves.
+            Os sorrisos mais sinceros.
+            E os sonhos passaram a ter você em cada detalhe.
+
+            Obrigado por existir.
+        </p>
+    </div>
+
+</section>
+
+<section>
+
+    <h2 class="section-title">⏳ Nosso Tempo Juntos</h2>
+
+    <div class="counter">
+
+        <div class="counter-box">
+            <h3 id="days">0</h3>
+            <span>Dias</span>
+        </div>
+
+        <div class="counter-box">
+            <h3 id="hours">0</h3>
+            <span>Horas</span>
+        </div>
+
+        <div class="counter-box">
+            <h3 id="minutes">0</h3>
+            <span>Minutos</span>
+        </div>
+
+        <div class="counter-box">
+            <h3 id="seconds">0</h3>
+            <span>Segundos</span>
+        </div>
+
+    </div>
+
+</section>
+
+<section>
+
+    <h2 class="section-title">📸 Nossos Momentos</h2>
+
+    <div class="gallery">
+
+        <div class="photo">
+            <img src="https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?q=80&w=1200" alt="">
+        </div>
+
+        <div class="photo">
+            <img src="https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?q=80&w=1200" alt="">
+        </div>
+
+        <div class="photo">
+            <img src="https://images.unsplash.com/photo-1516589091380-5d601f1b5c66?q=80&w=1200" alt="">
+        </div>
+
+    </div>
+
+</section>
+
+<section>
+
+    <h2 class="section-title">💌 Carta Para Você</h2>
+
+    <div class="card letter">
+
+        <p>
+            Você é o meu lugar favorito.
+
+            O meu pensamento mais bonito.
+
+            O motivo de tantos sorrisos bobos.
+
+            A pessoa que transformou momentos simples em memórias inesquecíveis.
+
+            Eu te amo pelas suas qualidades,
+            pelos seus defeitos,
+            pelos seus sonhos,
+            pela sua essência.
+
+            Eu te amo pelo que você é.
+
+            E prometo continuar escolhendo você,
+            todos os dias.
+
+            ❤️
+        </p>
+
+    </div>
+
+</section>
+
+<section>
+
+    <h2 class="section-title">❤️ Alguns Motivos Pelos Quais Eu Te Amo</h2>
+
+    <div class="reasons">
+
+        <div class="reason">Seu sorriso.</div>
+        <div class="reason">Seu abraço.</div>
+        <div class="reason">Seu jeito único.</div>
+        <div class="reason">Sua companhia.</div>
+        <div class="reason">Sua inteligência.</div>
+        <div class="reason">Seu carinho.</div>
+        <div class="reason">Sua risada.</div>
+        <div class="reason">Porque você é você.</div>
+
+    </div>
+
+</section>
+
+<section>
+
+    <div class="card" style="text-align:center">
+
+        <h2 style="font-size:3rem;margin-bottom:20px">
+            ∞
+        </h2>
+
+        <p style="font-size:1.4rem">
+            Existem infinitos motivos para amar você.
+        </p>
+
+    </div>
+
+</section>
+
+<footer>
+
+    Feito com todo o meu amor ❤️
+
+</footer>
+
+<script>
+
+// ALTERE PARA A DATA DO INÍCIO DO NAMORO
+const startDate = new Date("2024-01-01T00:00:00");
+
+function updateCounter(){
+
+    const now = new Date();
+
+    const diff = now - startDate;
+
+    const days =
+    Math.floor(diff / (1000*60*60*24));
+
+    const hours =
+    Math.floor(diff / (1000*60*60)) % 24;
+
+    const minutes =
+    Math.floor(diff / (1000*60)) % 60;
+
+    const seconds =
+    Math.floor(diff / 1000) % 60;
+
+    document.getElementById("days").textContent = days;
+    document.getElementById("hours").textContent = hours;
+    document.getElementById("minutes").textContent = minutes;
+    document.getElementById("seconds").textContent = seconds;
+}
+
+setInterval(updateCounter,1000);
+updateCounter();
+
+function createHeart(){
+
+    const heart = document.createElement("div");
+
+    heart.className="heart";
+    heart.innerHTML="❤";
+
+    heart.style.left=Math.random()*100+"vw";
+    heart.style.fontSize=(Math.random()*20+15)+"px";
+    heart.style.animationDuration=(Math.random()*5+5)+"s";
+
+    document.body.appendChild(heart);
+
+    setTimeout(()=>{
+        heart.remove();
+    },10000);
+
+}
+
+setInterval(createHeart,500);
+
+</script>
+
+</body>
+</html>
